@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Button, TextField, Grid, Typography } from "@material-ui/core/";
+import { Link } from 'react-router-dom';
 
 
 export default class RoomJoinPage extends Component {
@@ -6,6 +8,14 @@ export default class RoomJoinPage extends Component {
         super(props);
     }
     render() {
-        return  <p>this is the join page</p>
+        return(
+            <Grid container spacing={1} alignItems='center'>
+                <Grid>
+                    <Typography variant='h4' component='h4'>
+                        Join a Room
+                    </Typography>
+                </Grid>
+            </Grid>
+        )
     }
 }
