@@ -44,6 +44,7 @@ export default class CreateRoomPage extends Component {
     .then((response)=> response.json())
     .then((data)=> this.props.history.push('/room/'+data.code));
   }
+
     
     render() {
         return (
